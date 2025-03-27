@@ -1,0 +1,64 @@
+// let name:any;
+// let age:number | String;
+// let isStudent:boolean;
+// let hobbies:string[];
+// let role:[number,string];
+
+// let printName: (name:string) => number; 
+// let printAge: (age: unknown) => never;
+
+// let personName :unknown;
+
+// type int = number;
+
+// let num:int = 3;
+// console.log(num)
+
+// function printName(name: any){
+//   console.log(name);
+// }
+
+// printName('John')
+
+
+// type Person = {
+//   name: string;
+//   age?: number;
+  
+// }
+
+// let person :Person = {
+//   name: 'John'
+// }
+
+// let lotsOfPersons:Person[];
+
+
+// interface Person{
+//   name:string;
+//   age?:number;
+// }
+
+// interface Guy1 extends Person {
+//   proffession:string;
+// }
+
+
+
+// let p1:Guy1 = {
+//   name: 'John',
+//   proffession: 'Developer',
+//   age:32,
+// }
+
+// type Guy2 = Person & {
+//   proffession:string;
+//   hobbies?:string[];
+// }
+
+// let p2 :Guy2 = {
+//   name: 'Jane',
+//   proffession: 'Teacher',
+//   hobbies: ['Reading', 'Writing'],
+//   age: 30
+// }
