@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Todo } from "../model";
-import { AiFillDelete, AiFillEdit } from "react-icons/ai";
-import { MdDone } from "react-icons/md";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
+import DoneIcon from "@mui/icons-material/Done";
 import "./styles.css";
 import { Draggable } from "@hello-pangea/dnd";
 
@@ -71,13 +72,13 @@ const SingleTodo = ({ todo, todos, setTodos, index }: Props) => {
                 }
               }}
             >
-              <AiFillEdit />
+              <EditIcon />
             </span>
             <span className="icon" onClick={() => handleDelete(todo.id)}>
-              <AiFillDelete />
+              <DeleteIcon />
             </span>
             <span className="icon" onClick={() => handleDone(todo.id)}>
-              <MdDone />
+              <DoneIcon />
             </span>
           </div>
         </form>
